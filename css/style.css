@@ -43,7 +43,7 @@ article {
     margin: 2% auto 2% auto;
     display: inline-block;
     position: relative;
-    padding: 5%;
+    padding: 5% 0 5% 0;
 }
 
 #lead {
@@ -77,6 +77,18 @@ main.article {
     display: inline-block;
     width: 66%;
     text-align: left;
+    color: white;
+    padding-right: 10px;
+    line-height: 1.23;
+}
+
+.learn-more {
+    background-color: transparent;
+    border: solid 2px white;
+    padding: 5px 10px 5px 10px;
+    border-radius: 15px;
+    color: white;
+    font-size: 13px;
 }
 
 img {
