@@ -24,18 +24,31 @@ body {
 }
 
 main {
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     margin: 0 auto 0 auto;
     display: inline-block;
     position: relative;
 }
 
 header {
-    min-height: 460px;
+    min-height: 230px;
     width: 100%;
     background-color: white;
     margin: 0 auto 15% auto;
     display: inline-block;
+    border-collapse: collapse;
+    border: solid 1px black;
+}
+
+#slider {
+    min-height: 230px;
+    width: 100%;
+    background-color: white;
+    margin: 0 auto 15% auto;
+    display: inline-block;
+    border-collapse: collapse;
+    border: solid 1px black;
 }
 
 article {
@@ -43,13 +56,13 @@ article {
     margin: 2% auto 2% auto;
     display: inline-block;
     position: relative;
-    padding: 5% 0 5% 0;
+    padding: 5%;
 }
 
 #lead {
     background-color: #278cc2;
     /* take out later*/
-    height: 420px;
+    height: 425px;
 }
 
 #blurb {
@@ -66,7 +79,7 @@ article {
 
 aside {
     display: inline-block;
-    width: 30%;
+    width: 28%;
     height: 100%;
     border: solid 1px yellow;
     position: relative;
@@ -75,21 +88,17 @@ aside {
 
 main.article {
     display: inline-block;
-    width: 66%;
+    width: 70%;
     text-align: left;
     color: white;
-    padding-right: 10px;
-    padding-top: 0;
-    line-height: 1.23;
+    line-height: 1.35;
 }
 
 main.article>h2 {
     margin-top: 0;
 }
 
-#blurb>main {
-    padding-left: 10px;
-}
+#blurb>main {}
 
 #blurb>main,
 #detail>main {
@@ -105,20 +114,23 @@ main.article>h2 {
 .learn-more {
     background-color: transparent;
     border: solid 2px white;
-    padding: 5px 10px 5px 10px;
+    padding: 6px 12px 6px 12px;
     border-radius: 15px;
     color: white;
-    font-size: 13px;
+    /*font-size: 13px;*/
 }
 
 img {
-    width: 80%;
+    width: 90%;
     height: auto;
-    margin: 0 auto 0 auto;
     position: absolute;
+}
+
+#lead img {
+    margin: 0 auto 0 auto;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 0;
+    transform: translateY(-50%);
 }
 
 #blurb img {
