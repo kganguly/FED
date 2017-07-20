@@ -61,7 +61,7 @@ article {
 #detail {
     background-color: #a6a6a6;
     /* take out later*/
-    min-height: 420px;
+    height: 420px;
 }
 
 aside {
@@ -79,14 +79,25 @@ main.article {
     text-align: left;
     color: white;
     padding-right: 10px;
+    padding-top: 0;
     line-height: 1.23;
 }
 
+main.article>h2 {
+    margin-top: 0;
+}
+
 #blurb>main {
+    padding-left: 10px;
+}
+
+#blurb>main,
+#detail>main {
     color: black;
 }
 
-#blurb button {
+#blurb button,
+#detail button {
     color: black;
     border-color: black;
 }
@@ -116,6 +127,11 @@ img {
     left: 50%;
     transform: translateX(-50%);
     bottom: 0;
+}
+
+#detail img {
+    top: 0;
+    transform: translateX(-50%);
 }
 
 @media only screen and (min-width: 700px) {}
