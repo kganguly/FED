@@ -3,11 +3,6 @@
     box-sizing: border-box;
 }
 
-html {
-    font-family: sans-serif;
-    font-size: 12px;
-}
-
 div,
 header,
 section,
@@ -21,6 +16,11 @@ body {
     text-align: center;
     background-color: black;
     position: relative;
+    font-family: sans-serif;
+    font-size: 12px;
+    height: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 main {
@@ -51,44 +51,57 @@ header {
     border: solid 1px black;
 }
 
+section {
+    height: 100%;
+}
+
 article {
     width: 90%;
     margin: 2% auto 2% auto;
-    display: inline-block;
+    display: table;
     position: relative;
-    padding: 5%;
+    padding: 5% 2% 5% 2%;
+    border-spacing: 10px 0;
 }
 
 #lead {
     background-color: #278cc2;
-    /* take out later*/
-    height: 425px;
 }
 
 #blurb {
     background-color: #a6a6a6;
-    /* take out later*/
-    height: 270px;
 }
 
 #detail {
     background-color: #a6a6a6;
-    /* take out later*/
-    height: 420px;
 }
 
 aside {
-    display: inline-block;
+    display: table-cell;
     width: 28%;
     height: 100%;
     border: solid 1px yellow;
     position: relative;
+}
+
+#lead>aside {
+    vertical-align: middle;
+    text-align: left;
+}
+
+#blurb>aside {
+    vertical-align: bottom;
+    text-align: right;
+}
+
+#detail>aside {
     vertical-align: top;
+    text-align: left;
 }
 
 main.article {
     display: inline-block;
-    width: 70%;
+    width: 100%;
     text-align: left;
     color: white;
     line-height: 1.35;
@@ -97,8 +110,6 @@ main.article {
 main.article>h2 {
     margin-top: 0;
 }
-
-#blurb>main {}
 
 #blurb>main,
 #detail>main {
@@ -117,33 +128,23 @@ main.article>h2 {
     padding: 6px 12px 6px 12px;
     border-radius: 15px;
     color: white;
-    /*font-size: 13px;*/
 }
 
 img {
     width: 90%;
     height: auto;
-    position: absolute;
 }
 
 #lead img {
-    margin: 0 auto 0 auto;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
+    vertical-align: middle;
 }
 
 #blurb img {
-    transform: none;
-    top: initial;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 0;
+    vertical-align: bottom;
 }
 
 #detail img {
-    top: 0;
-    transform: translateX(-50%);
+    vertical-align: top;
 }
 
 @media only screen and (min-width: 700px) {}
