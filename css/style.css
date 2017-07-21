@@ -32,13 +32,54 @@ main {
 }
 
 header {
-    min-height: 230px;
+    height: 210px;
     width: 100%;
     background-color: white;
     margin: 0 auto 15% auto;
     display: inline-block;
     border-collapse: collapse;
     border: solid 1px black;
+    position: relative;
+}
+
+header>.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0 auto 0 auto;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    text-align: center;
+    margin: 3px;
+}
+
+li a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    /*border-bottom: solid 2px black;*/
+    padding: 3px;
+    font-weight: bold;
+}
+
+li a.active {
+    color: #278cc2;
+    border: solid 2px #278cc2;
+}
+
+header h1 {
+    letter-spacing: 5px;
+    font-size: 18px;
+    white-space: nowrap;
+    margin-top: 50px;
 }
 
 #slider {
