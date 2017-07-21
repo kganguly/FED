@@ -35,14 +35,14 @@ header {
     height: 210px;
     width: 100%;
     background-color: white;
-    margin: 0 auto 15% auto;
+    margin: 0;
     display: inline-block;
     border-collapse: collapse;
-    border: solid 1px black;
+    border-bottom: solid 1px black;
     position: relative;
 }
 
-header>.wrapper {
+.wrapper {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -86,10 +86,45 @@ header h1 {
     min-height: 230px;
     width: 100%;
     background-color: white;
-    margin: 0 auto 15% auto;
+    margin: 0 0 15% 0;
     display: inline-block;
     border-collapse: collapse;
-    border: solid 1px black;
+    border-top: solid 1px black;
+    position: relative;
+}
+
+#slider>.wrapper {
+    width: 100%;
+}
+
+#slider h2 {
+    white-space: nowrap;
+}
+
+.meter {
+    /* border: none; */
+    width: 100%;
+}
+
+.meter>label {
+    margin: 0 5%;
+    text-align: center;
+    display: inline-block;
+}
+
+.meter>label:first-of-type {
+    margin-left: 2.5%;
+}
+
+.meter>label:last-of-type {
+    margin-right: 2.5%;
+}
+
+label>span,
+label>input {
+    display: block;
+    margin: 10px auto;
+    font-size: 14px;
 }
 
 section {
