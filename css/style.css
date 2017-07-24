@@ -9,7 +9,7 @@ section,
 article,
 aside,
 main {
-    border: solid 1px white;
+    /* border: solid 1px white; */
 }
 
 body {
@@ -378,14 +378,14 @@ img {
         min-height: 230px;
     }
     #lead {
-        width: 46%;
-        margin-right: 4%;
+        width: 50%;
+        margin-left: -6%;
     }
     #speed {
         min-height: 280px;
     }
     main {
-        width: 1200px;
+        width: 1150px;
     }
     article {
         width: 90%;
@@ -395,15 +395,15 @@ img {
         border-spacing: 10px 0;
     }
     #blurb {
-        margin-left: 4%;
-        width: 46%;
+        margin-left: 6%;
+        width: 49%;
     }
     #blurb img {
         margin-right: -90%;
     }
     #detail {
-        margin-left: 6%;
-        width: 94%;
+        /* margin-left: 6%; */
+        width: 100%;
     }
     #detail img {
         margin-top: 5%;
