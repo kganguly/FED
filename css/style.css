@@ -123,6 +123,7 @@ header h1 {
 .meter {
     border: none;
     width: 100%;
+    position: relative;
 }
 
 .meter>label {
@@ -130,6 +131,14 @@ header h1 {
     text-align: center;
     display: inline-block;
     width: 10%;
+}
+
+.meter>label:after {
+    content: "";
+    position: absolute;
+    top: -40px;
+    height: 20px;
+    border-left: solid 2px black;
 }
 
 .meter>label.checked {
@@ -155,11 +164,11 @@ label>input {
 }
 
 .thermometer {
+    position: relative;
     border: solid 1.5px black;
     border-radius: 13px;
     margin-top: -90px;
     margin-bottom: -26px;
-    background: linear-gradient(90deg, transparent 12.5%, black 12.5%, transparent 13%, transparent 37.5%, black 37.5%, transparent 38%, transparent 62.5%, black 62.5%, transparent 63%, transparent 87.5%, black 87.5%, transparent 88%);
 }
 
 .slider {
@@ -331,6 +340,9 @@ img {
     li a.active {
         color: #2e9cd9;
         border: solid 2px #2e9cd9;
+    }
+    .meter>label:after {
+        top: -37px;
     }
     label>span {
         font-size: 16px;
