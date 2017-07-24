@@ -47,6 +47,7 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 100%;
 }
 
 ul {
@@ -290,7 +291,9 @@ img {
     body {
         font-size: 14px;
     }
-    header.wrapper,
+    header.wrapper {
+        width: 100%;
+    }
     #speed>.wrapper {
         width: 90%;
     }
@@ -300,7 +303,7 @@ img {
     header h1 {
         letter-spacing: 5px;
         font-size: 22px;
-        margin-top: 50px;
+        margin-top: 40px;
     }
     #speed {
         min-height: 300px;
@@ -309,7 +312,13 @@ img {
         top: 10px;
     }
     li {
-        margin: 0 20px;
+        margin: 0 2%;
+    }
+    li:first-of-type {
+        margin-left: 0;
+    }
+    li:last-of-type {
+        margin-right: 0;
     }
     li a {
         display: block;
