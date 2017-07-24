@@ -152,7 +152,7 @@ label>input {
     background-color: #96cfed;
     border-radius: 10px;
     border: none;
-    width: 12.5%;
+    width: 13%;
     position: relative;
     z-index: -1;
 }
@@ -173,7 +173,7 @@ label>input {
     width: 30px;
     height: 30px;
     position: relative;
-    left: -37.5%;
+    left: -36.5%;
 }
 
 section {
