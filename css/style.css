@@ -262,7 +262,7 @@ img {
     body {
         font-size: 14px;
     }
-    header>.wrapper,
+    header.wrapper,
     #speed>.wrapper {
         width: 90%;
     }
@@ -281,10 +281,7 @@ img {
         top: 10px;
     }
     li {
-        display: inline-block;
-        text-align: center;
         margin: 0 20px;
-        /* font-size: 13px; */
     }
     li a {
         display: block;
@@ -335,4 +332,15 @@ img {
     }
 }
 
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+    header.wrapper,
+    #speed>.wrapper {
+        width: 900px;
+    }
+    header {
+        min-height: 230px;
+    }
+    #speed {
+        min-height: 280px;
+    }
+}
