@@ -9,7 +9,7 @@ section,
 article,
 aside,
 main {
-    border: solid 1px white;
+    /* border: solid 1px white; */
 }
 
 body {
@@ -32,13 +32,13 @@ main {
 }
 
 header {
-    height: 210px;
+    height: 205px;
     width: 100%;
     background-color: white;
     margin: 0;
     display: inline-block;
-    border-collapse: collapse;
-    border-bottom: solid 1px black;
+    /* border-collapse: collapse; */
+    /* border-bottom: solid 0.5px black; */
     position: relative;
 }
 
@@ -53,12 +53,15 @@ ul {
     list-style-type: none;
     margin: 0 auto 0 auto;
     padding: 0;
+    position: relative;
+    top: 10px;
 }
 
 li {
     display: inline-block;
     text-align: center;
     margin: 3px;
+    /* font-size: 13px; */
 }
 
 li a {
@@ -71,8 +74,8 @@ li a {
 }
 
 li a.active {
-    color: #278cc2;
-    border: solid 2px #278cc2;
+    color: #2e9cd9;
+    border: solid 2px #2e9cd9;
 }
 
 header h1 {
@@ -83,23 +86,27 @@ header h1 {
 }
 
 #speed {
-    min-height: 230px;
+    min-height: 248px;
     width: 100%;
     background-color: white;
     margin: 0 0 15% 0;
     display: inline-block;
     border-collapse: collapse;
-    border-top: solid 1px black;
+    /* border-top: solid 1px black; */
     position: relative;
 }
 
 #speed>.wrapper {
     width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
 }
 
 #speed h3 {
     white-space: nowrap;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
 }
 
 .meter {
@@ -131,8 +138,7 @@ label>input {
     background-color: #96cfed;
     border-radius: 10px;
     border: none;
-    width: 37.5%;
-    /*12.5 + 25% */
+    width: 12.5%;
     position: relative;
     z-index: -1;
 }
@@ -141,8 +147,8 @@ label>input {
     border: solid 1.5px black;
     border-radius: 13px;
     margin-top: -90px;
-    margin-bottom: -25px;
-    background: linear-gradient(90deg, transparent 46px, black 46px, transparent 47px, transparent 139px, black 139px, transparent 141px, transparent 233px, black 233px, transparent 234px, transparent 327px, black 327px, transparent 329px);
+    margin-bottom: -26px;
+    background: linear-gradient(90deg, transparent 46px, black 46px, transparent 48px, transparent 139px, black 139px, transparent 141px, transparent 233px, black 233px, transparent 234px, transparent 327px, black 327px, transparent 329px);
 }
 
 .slider {
@@ -153,8 +159,7 @@ label>input {
     width: 30px;
     height: 30px;
     position: relative;
-    left: 140px;
-    /* 45 + 70px*/
+    left: -140px;
 }
 
 section {
@@ -186,7 +191,7 @@ aside {
     display: table-cell;
     width: 28%;
     height: 100%;
-    border: solid 1px yellow;
+    /* border: solid 1px yellow; */
     position: relative;
 }
 
