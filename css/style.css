@@ -179,10 +179,7 @@ article {
     background-color: #278cc2;
 }
 
-#blurb {
-    background-color: #a6a6a6;
-}
-
+#blurb,
 #detail {
     background-color: #a6a6a6;
 }
@@ -340,7 +337,36 @@ img {
     header {
         min-height: 230px;
     }
+    #lead {
+        width: 46%;
+        margin-right: 4%;
+    }
     #speed {
         min-height: 280px;
+    }
+    main {
+        width: 1200px;
+    }
+    article {
+        width: 90%;
+        margin: 2% auto 2% auto;
+        position: relative;
+        padding: 2% 2% 2% 2%;
+        border-spacing: 10px 0;
+    }
+    #blurb {
+        margin-left: 4%;
+        width: 46%;
+    }
+    #blurb img {
+        margin-right: -90%;
+    }
+    #detail {
+        margin-left: 6%;
+        width: 94%;
+    }
+    #detail img {
+        margin-left: -16%;
+        width: 100%;
     }
 }
