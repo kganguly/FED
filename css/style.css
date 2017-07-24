@@ -32,7 +32,7 @@ main {
 }
 
 header {
-    height: 205px;
+    height: 225px;
     width: 100%;
     background-color: white;
     margin: 0;
@@ -86,7 +86,7 @@ header h1 {
 }
 
 #speed {
-    min-height: 248px;
+    min-height: 275px;
     width: 100%;
     background-color: white;
     margin: 0 0 15% 0;
