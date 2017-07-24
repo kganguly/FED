@@ -25,9 +25,7 @@ body {
 
 main {
     width: 100%;
-    /* max-width: 400px; */
     margin: 0 auto 0 auto;
-    display: inline-block;
     position: relative;
 }
 
@@ -36,9 +34,7 @@ header {
     width: 100%;
     background-color: white;
     margin: 0;
-    display: inline-block;
-    /* border-collapse: collapse; */
-    /* border-bottom: solid 0.5px black; */
+    border-bottom: solid 0.5px black;
     position: relative;
 }
 
@@ -90,9 +86,7 @@ header h1 {
     width: 100%;
     background-color: white;
     margin: 0 0 15% 0;
-    display: inline-block;
     border-collapse: collapse;
-    /* border-top: solid 1px black; */
     position: relative;
 }
 
