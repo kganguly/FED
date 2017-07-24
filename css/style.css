@@ -115,10 +115,10 @@ header h1 {
 }
 
 .meter>label {
-    margin: 0 20px;
+    margin: 0 7%;
     text-align: center;
     display: inline-block;
-    width: 50px;
+    width: 10%;
 }
 
 .meter>label.checked {
@@ -148,7 +148,7 @@ label>input {
     border-radius: 13px;
     margin-top: -90px;
     margin-bottom: -26px;
-    background: linear-gradient(90deg, transparent 46px, black 46px, transparent 48px, transparent 139px, black 139px, transparent 141px, transparent 233px, black 233px, transparent 234px, transparent 327px, black 327px, transparent 329px);
+    background: linear-gradient(90deg, transparent 12.5%, black 12.5%, transparent 13%, transparent 37.5%, black 37.5%, transparent 38%, transparent 62.5%, black 62.5%, transparent 63%, transparent 87.5%, black 87.5%, transparent 88%);
 }
 
 .slider {
@@ -159,7 +159,7 @@ label>input {
     width: 30px;
     height: 30px;
     position: relative;
-    left: -140px;
+    left: -37.5%;
 }
 
 section {

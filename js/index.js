@@ -9,22 +9,22 @@ function setListeners() {
         console.log(setTo);
         switch (setTo) {
             case "setTo1":
-                var x = "-140";
+                var x = "-37.5";
                 var width = "12.5";
                 break;
             case "setTo2":
-                var x = "-45";
+                var x = "-12.5";
                 var width = "37.5";
                 break;
             case "setTo3":
-                var x = "45";
+                var x = "12.5";
                 var width = "62.5";
                 break;
             case "setTo4":
-                var x = "140";
+                var x = "37.5";
                 var width = "87.5";
         }
-        $(".slider").css("left", x + "px");
+        $(".slider").css("left", x + "%");
         $(".mercury").css("width", width + "%");
         $(".meter>label").removeClass("checked");
         $(".meter input").removeAttr("checked");
