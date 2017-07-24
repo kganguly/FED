@@ -108,17 +108,10 @@ header h1 {
 }
 
 .meter>label {
-    margin: 0 5%;
+    margin: 0 20px;
     text-align: center;
     display: inline-block;
-}
-
-.meter>label:first-of-type {
-    margin-left: 2.5%;
-}
-
-.meter>label:last-of-type {
-    margin-right: 2.5%;
+    width: 50px;
 }
 
 .meter>label.checked {
@@ -129,7 +122,7 @@ header h1 {
 label>span,
 label>input {
     display: block;
-    margin: 10px auto;
+    margin: 5px auto;
     font-size: 14px;
 }
 
@@ -138,12 +131,18 @@ label>input {
     background-color: #96cfed;
     border-radius: 10px;
     border: none;
+    width: 37.5%;
+    /*12.5 + 25% */
+    position: relative;
+    z-index: -1;
 }
 
 .thermometer {
     border: solid 1.5px black;
     border-radius: 13px;
-    margin-top: -90px
+    margin-top: -90px;
+    margin-bottom: -25px;
+    background: linear-gradient(90deg, transparent 46px, black 46px, transparent 47px, transparent 139px, black 139px, transparent 141px, transparent 233px, black 233px, transparent 234px, transparent 327px, black 327px, transparent 329px);
 }
 
 .slider {
@@ -153,6 +152,9 @@ label>input {
     display: inline-block;
     width: 30px;
     height: 30px;
+    position: relative;
+    left: 140px;
+    /* 45 + 70px*/
 }
 
 section {
