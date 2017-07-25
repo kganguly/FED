@@ -6,7 +6,6 @@ $(document).ready(function () {
 function setListeners() {
     $(".meter input").click(function () {
         var setTo = this.getAttribute("id");
-        console.log(setTo);
         switch (setTo) {
             case "setTo1":
                 var x = "-36.5";
@@ -30,5 +29,5 @@ function setListeners() {
         $(".meter input").removeAttr("checked");
         this.setAttribute("checked", "checked");
         this.parentElement.setAttribute("class", "checked");
-    })
+    });
 }

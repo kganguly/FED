@@ -3,15 +3,6 @@
     box-sizing: border-box;
 }
 
-div,
-header,
-section,
-article,
-aside,
-main {
-    /* border: solid 1px white; */
-}
-
 body {
     text-align: center;
     background-color: black;
@@ -26,7 +17,6 @@ body {
 main {
     width: 100%;
     margin: 0 auto 0 auto;
-    position: relative;
 }
 
 header {
@@ -64,7 +54,6 @@ li a {
     display: block;
     text-decoration: none;
     color: black;
-    /*border-bottom: solid 2px black;*/
     padding: 3px;
     font-weight: bold;
 }
@@ -91,10 +80,6 @@ header h1 {
 }
 
 #speed>.wrapper {
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
     transform: translate(-50%, -70%);
 }
 
@@ -104,6 +89,7 @@ header h1 {
 }
 
 #speed:after {
+    /*Down arrow after #speed.*/
     content: "";
     position: absolute;
     bottom: 0;
@@ -128,6 +114,7 @@ header h1 {
 }
 
 .meter>label:after {
+    /*Tick marks above labels in meter.*/
     content: "";
     position: absolute;
     top: -40px;
@@ -162,6 +149,7 @@ label>input {
     border: solid 1.5px black;
     border-radius: 13px;
     margin-top: -90px;
+    /*Pull up the slider in line with thermometer.*/
     margin-bottom: -26px;
 }
 
@@ -194,6 +182,7 @@ article {
 }
 
 #lead:before {
+    /*Folded corner*/
     content: "";
     position: absolute;
     top: 0;
@@ -210,6 +199,7 @@ article {
 
 #blurb:before,
 #detail:before {
+    /*Folded corner*/
     content: "";
     position: absolute;
     top: 0;
@@ -223,7 +213,6 @@ aside {
     display: table-cell;
     width: 28%;
     height: 100%;
-    /* border: solid 1px yellow; */
     position: relative;
 }
 
@@ -242,7 +231,7 @@ aside {
     text-align: left;
 }
 
-main.article {
+article>main {
     display: inline-block;
     width: 100%;
     text-align: left;
@@ -250,7 +239,7 @@ main.article {
     line-height: 1.35;
 }
 
-main.article>h2 {
+article>main>h2 {
     margin-bottom: 0;
 }
 
@@ -294,14 +283,11 @@ img {
     body {
         font-size: 14px;
     }
-    header.wrapper {
-        width: 100%;
-    }
-    #speed>.wrapper {
-        width: 90%;
-    }
     header {
         min-height: 265px;
+    }
+    header.wrapper {
+        width: 100%;
     }
     header h1 {
         letter-spacing: 5px;
@@ -311,6 +297,10 @@ img {
     #speed {
         min-height: 350px;
     }
+    #speed>.wrapper {
+        width: 90%;
+    }
+    /*Different nav styling.*/
     ul {
         top: 0;
     }
@@ -335,15 +325,16 @@ img {
         color: #2e9cd9;
         border: solid 2px #2e9cd9;
     }
+    /*Adjust placement of tick marks on .meter.*/
     .meter>label:after {
         top: -37px;
     }
     label>span {
         font-size: 16px;
     }
+    /*Blurb and lead side by side.*/
     #lead,
     #blurb {
-        /* max-width: 360px; */
         width: 48.75%;
         display: inline-table;
         vertical-align: top;
@@ -383,10 +374,6 @@ img {
     header {
         min-height: 230px;
     }
-    #lead {
-        width: 50%;
-        margin-left: -6%;
-    }
     #speed {
         min-height: 280px;
     }
@@ -394,11 +381,11 @@ img {
         width: 1150px;
     }
     article {
-        width: 90%;
-        margin: 2% auto 2% auto;
-        position: relative;
         padding: 2% 2% 2% 2%;
-        border-spacing: 10px 0;
+    }
+    #lead {
+        width: 50%;
+        margin-left: -6%;
     }
     #blurb {
         margin-left: 6%;
@@ -406,10 +393,6 @@ img {
     }
     #blurb img {
         margin-right: -90%;
-    }
-    #detail {
-        /* margin-left: 6%; */
-        width: 100%;
     }
     #detail img {
         margin-top: 5%;
