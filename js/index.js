@@ -1,6 +1,6 @@
 $(document).ready(function () {
+    setForm();
     setListeners();
-
 });
 
 function setListeners() {
@@ -30,4 +30,8 @@ function setListeners() {
         this.setAttribute("checked", "checked");
         this.parentElement.setAttribute("class", "checked");
     });
+}
+
+function setForm() {
+    $('input[type="radio"][checked="checked"]').prop('checked', true);
 }

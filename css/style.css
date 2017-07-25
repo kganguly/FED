@@ -1,6 +1,9 @@
 @import 'normalize.css';
 * {
     box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
 }
 
 body {
@@ -384,7 +387,7 @@ img {
         width: 1150px;
     }
     article {
-        padding: 2% 2% 2% 2%;
+        padding: 3% 2% 4% 2%;
     }
     #lead {
         width: 50%;
@@ -394,12 +397,14 @@ img {
         margin-left: 6%;
         width: 49%;
     }
+    #blurb>aside {
+        text-align: right;
+    }
     #blurb img {
         margin-right: -90%;
     }
     #detail img {
-        margin-top: 5%;
-        margin-left: -20%;
+        margin-left: -18%;
         width: 100%;
     }
 }
