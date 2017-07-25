@@ -3,6 +3,10 @@ $(document).ready(function () {
     setListeners();
 });
 
+function setForm() {
+    $('input[type="radio"][checked="checked"]').prop('checked', true);
+}
+
 function setListeners() {
     $(".meter input").click(function () {
         var setTo = this.getAttribute("id");
@@ -30,8 +34,4 @@ function setListeners() {
         this.setAttribute("checked", "checked");
         this.parentElement.setAttribute("class", "checked");
     });
-}
-
-function setForm() {
-    $('input[type="radio"][checked="checked"]').prop('checked', true);
 }

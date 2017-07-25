@@ -1,0 +1,16 @@
+QUESTIONS
+- Should there be a remembered history to the slider on consecutive visits?
+    - Assuming no.
+	
+
+ASSUMPTIONS
+- That the layout should be responsive to changing screen sizes.
+    - Not 3 fixed size layouts
+- That there are no generic headers, footers, etc. I need to add at the moment.
+- That this will be used only for left to right languages.
+- That the nav options do not have to be linked to other pages for now.
+- That there is no change with the change in slider position for now.
+- That the site is light enough to avoid optimizing loading of specific parts(i.e., images).
+- That redirection to https is not necessary on the front end.
+- That javascript will be required for full functionality.
+
